@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.TP_Android_Grupo_15" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/azul_oscuro</item>
+        <item name="colorPrimaryDark">@color/azul_muy_oscuro</item>
+        <item name="colorAccent">@color/azul_claro</item>
+        <item name="android:windowBackground">@color/gris_fondo</item>
+        <item name="buttonStyle">@style/BotonPrincipal</item>
+        <item name="editTextStyle">@style/CampoTexto</item>
+    </style>
+
+    <style name="Theme.TP_Android_Grupo_15" parent="Base.Theme.TP_Android_Grupo_15" />
+
+    <style name="BotonPrincipal" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/botones</item>
+        <item name="android:backgroundTint">@color/azul_oscuro</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CampoTexto" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/fondo_edittext</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textColor">@color/negro_texto</item>
+        <item name="android:textColorHint">@color/gris_texto</item>
+    </style>
+
+
+    <style name="DialogoEstilo" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/azul_oscuro</item>
+        <item name="android:textColor">@color/negro_texto</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BotonDialogNegativo</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BotonDialogPositivo</item>
+        <item name="buttonBarNeutralButtonStyle">@style/BotonDialogNeutro</item>
+    </style>
+
+    <style name="BotonDialogPositivo" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/azul_oscuro</item>
+    </style>
+
+    <style name="BotonDialogNegativo" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/rojo_eliminar</item>
+    </style>
+
+    <style name="BotonDialogNeutro" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/gris_texto</item>
+    </style>
+</resources>

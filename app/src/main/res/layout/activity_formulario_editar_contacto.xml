@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioEditarContacto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDITAR CONTACTO"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NOMBRE" android:textStyle="bold"/>
+            <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Nombre" android:inputType="textPersonName" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="APELLIDO" android:textStyle="bold" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/etApellido" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Apellido" android:inputType="textPersonName" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TELÉFONO" android:textStyle="bold" android:layout_marginTop="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <EditText android:id="@+id/etTelefono" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Telefono" android:inputType="phone" />
+                <Spinner android:id="@+id/spinnerTelefono" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EMAIL" android:textStyle="bold" android:layout_marginTop="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <EditText android:id="@+id/etEmail" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Email" android:inputType="textEmailAddress" />
+                <Spinner android:id="@+id/spinnerEmail" android:layout_width="wrap_content" android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DIRECCIÓN" android:textStyle="bold" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/etDireccion" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="Dirección" android:inputType="text" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FECHA DE NACIMIENTO" android:textStyle="bold" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/etFechaNacimiento" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="DD/MM/AAAA" android:focusable="false" android:clickable="true" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#CCCCCC" android:layout_marginTop="24dp" android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIVEL DE ESTUDIOS ALCANZADOS"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupEstudios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/border_rounded"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton android:id="@+id/radioPrimarioIncompleto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Primario incompleto"/>
+                <RadioButton android:id="@+id/radioPrimarioCompleto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Primario completo"/>
+                <RadioButton android:id="@+id/radioSecundarioIncompleto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Secundario incompleto"/>
+                <RadioButton android:id="@+id/radioSecundarioCompleto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Secundario completo"/>
+                <RadioButton android:id="@+id/radioOtros" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Otros"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="INTERESES"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/border_rounded"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <CheckBox android:id="@+id/cbDeporte" android:layout_width="0dp" android:layout_weight="1" android:minHeight="48dp" android:layout_height="wrap_content" android:text="Deporte" />
+                    <CheckBox android:id="@+id/cbMusica" android:layout_width="0dp" android:layout_weight="1" android:minHeight="48dp" android:layout_height="wrap_content" android:text="Musica" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+                    <CheckBox android:id="@+id/cbArte" android:layout_width="0dp" android:layout_weight="1" android:minHeight="48dp" android:layout_height="wrap_content" android:text="Arte" />
+                    <CheckBox android:id="@+id/cbTecnologia" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Tecnologia" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="71dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DESEA RECIBIR INFORMACION?" />
+                <Switch android:id="@+id/switchSiNo" android:layout_width="106dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:text="Si" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUARDAR CAMBIOS"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/AgregarContactos" android:title="AGREGAR CONTACTOS" ></item>
+    <item android:id="@+id/ListadoContactos" android:title="LISTAR CONTACTOS" ></item>
+</menu>
