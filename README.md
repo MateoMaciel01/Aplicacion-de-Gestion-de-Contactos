@@ -89,7 +89,7 @@ La aplicación utiliza **SQLite** para almacenar toda la información de los con
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+git clone https://github.com/MateoMaciel01/Aplicacion-de-Gestion-de-Contactos.git
 ```
 
 ### 2. Abrir el proyecto
